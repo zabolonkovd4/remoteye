@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.5)
 
 project(typeye_console LANGUAGES CXX)
 
@@ -13,7 +13,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5Core)
 
-add_executable(typeye_console
-  main.cpp
-)
-target_link_libraries(typeye_console Qt${QT_VERSION_MAJOR}::Core)
+add_executable(typeye_console main.cpp)
+target_link_libraries(typeye_console Qt5::Core)
